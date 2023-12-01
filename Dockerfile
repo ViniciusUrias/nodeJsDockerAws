@@ -11,7 +11,7 @@ COPY package*.json ./
 RUN npm install
 
 # Copy the rest of the application code
-COPY app ./
+COPY . .
 
 # Expose the port for the Express app
 EXPOSE 3000
